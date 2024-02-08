@@ -16,8 +16,8 @@ public class Print1 {
          %f : 실수    %10f 열자리 실수     %10.2 소수점 2째자리까지
          */
 
-        System.out.printf("%10s", "홍길동");
-        System.out.printf("%10d", 100);
+        System.out.printf("%10s", "홍길동");  //        홍길동
+        System.out.printf("%10d", 100);      //        100
         System.out.printf("%10.2f", 10.0);    // 기본 소수점 값 6자리
     }
 }
