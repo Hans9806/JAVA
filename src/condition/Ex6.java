@@ -15,5 +15,17 @@ public class Ex6 {
         Scanner scanner = new Scanner(System.in);
         String grade = scanner.next();
 
+        switch (grade) {
+            case "A":
+                System.out.println("VVIP 혜택");
+            case "B":
+                System.out.println("VIP 혜택");
+                break;
+            case "C":
+                System.out.println("우수회원");
+            case "D":
+                System.out.println("일반회원");
+                break;
+        }
     }
 }

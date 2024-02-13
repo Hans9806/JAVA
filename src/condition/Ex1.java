@@ -11,6 +11,15 @@ public class Ex1 {
         // 음수일 때 "잘못 입력하셨습니다"
 
         Scanner scanner = new Scanner(System.in);
+        System.out.print("환전할 달러를 입력해주세요. >");
         int dollar = scanner.nextInt();
+
+        if (dollar == 0) {
+            System.out.println("환전할 금액이 없습니다.");
+        } else if (dollar > 0) {
+            System.out.println(1327 * dollar + "원 입니다.");
+        } else {
+            System.out.println("잘못 입력하셨습니다");
+        }
     }
 }

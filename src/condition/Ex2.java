@@ -1,5 +1,7 @@
 package condition;
 
+import java.util.Scanner;
+
 public class Ex2 {
     public static void main(String[] args) {
         /* 계절 판별하기
@@ -8,5 +10,21 @@ public class Ex2 {
         예를 들어, 3월부터 5월까지는 "봄", 6월부터 8월까지는 "여름",
         9월부터 11월까지는 "가을", 12월, 1월, 2월은 "겨울"입니다.
          */
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("몇 월인지 입력해주세요 > ");
+        int month = scanner.nextInt();
+
+        if (month == 12 || month == 1 || month == 2) {
+            System.out.println("겨울");
+        } else if (3 <= month && month <= 5) {
+            System.out.println("봄");
+        } else if (6 <= month && month <= 8) {
+            System.out.println("여름");
+        } else if (9 <= month && month <= 11) {
+            System.out.println("가을");
+        } else {
+            System.out.println("잘못 입력했습니다.");
+        }
+
     }
 }

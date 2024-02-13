@@ -24,6 +24,27 @@ public class Ex4 {
         double result;
 
         // ...
+        switch (operator) {
+            case "+":
+                result = first + second;
+                break;
+            case "-":
+                result = first - second;
+                break;
+            case "*":
+                result = first * second;
+                break;
+            case "/":
+                result = first / second;
+                if (second == 0) {
+                    System.out.println("0으로 나눌 수 없습니다.");
+                    return;
+                }
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + operator);
+        }
+        System.out.println("결과는 " + result);
 
     }
 }
