@@ -17,10 +17,16 @@ public class Ex5 {
         // code
         for (int i = start; i <= end; i++) {
             if (i % 2 == 0) {
+                System.out.print(i);
                 sum = sum + i;
+                if (i == end || i == end-1) {
+                    System.out.print(" = ");
+                } else {
+                    System.out.print(" + ");
+                }
             }
         }
 
-        System.out.println("짝수의 합계 값 : " + sum);
+        System.out.println(sum);
     }
 }
