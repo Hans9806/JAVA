@@ -1,7 +1,6 @@
 package variable;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Read1 {
     public static void main(String[] args) throws IOException {

@@ -22,6 +22,17 @@ public class Ex3 {
     - 메인메서드에서 책을 2권 생성하고, 각 메서드를 실행해보세요.
      */
     public static void main(String[] args) {
+        // 객체 생성
+        Book book = new Book("노인과 바다", "어니스트 헤밍웨이", "12345678", true);
+        Book book1 = new Book("혼자공부하는자바", "홍길동");
+
+        // 메서드 호출
+        book.printInfo();
+        book.borrowBook();
+        book.printInfo();
+        book.borrowBook();
+        book.returnBook();
+        book.printInfo();
 
     }
 }
