@@ -1,6 +1,6 @@
 package inheritance;
 
-public class CellPhone {
+public class Cellphone {
     // 필드
     String model;
     String color;

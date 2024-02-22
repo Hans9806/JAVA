@@ -1,3 +1,4 @@
+/*
 package inheritance;
 
 public class Inheritance3 {
@@ -16,3 +17,4 @@ public class Inheritance3 {
         dmbCellPhone.turnOnDmb();
     }
 }
+*/
