@@ -29,7 +29,7 @@ public class ShoppingCart {
         for (int i = 0; i < count; i++) {
             System.out.println("상품명:" + items[i].getName() + ", 합계: " + items[i].getTotal());
         }
-        System.out.println("전체 가격 합:"+ calculateSum());
+        System.out.println("전체 가격 합: "+ calculateSum());
     }
 
     // 내부에서만 사용하는 메서드는 private로 막아둔다.

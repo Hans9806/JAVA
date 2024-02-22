@@ -42,6 +42,6 @@ ShoppingCart 클래스의 필드 Item[] items, int itemCount
         cart.addItem(item1);
         cart.addItem(item2);
         cart.displayItems();
-        // cart.count = 8; private으로 데이터 접근을 막는다.
     }
+        // cart.count = 8; private으로 데이터 접근을 막는다.
 }
