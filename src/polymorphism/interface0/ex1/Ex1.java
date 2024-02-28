@@ -11,5 +11,13 @@ public class Ex1 {
         MP3Player.play();
         MP3Player.pause();
         MP3Player.stop();
+
+        // 배열 사용한 경우
+        Playable[] players = {new MP3Player(), new CDPlayer()};
+            for (Playable player : players) {
+                player.play();
+                player.pause();
+                player.stop();
+            }
     }
 }
