@@ -15,7 +15,11 @@ public class DeepCopy implements Cloneable {
         DeepCopy cloned = (DeepCopy) super.clone();
         // 내부 필드의 참조값( 배열, 참조타입 등)을 다시 한 번 복사해야 됨
         cloned.array = this.array.clone();
+        // 2차원 배열의 복제 : 배열의 차원마다 모두 복제해야 함
         cloned.deepArray = this.deepArray.clone();
+        for (int i = 0; i < deepArray.length; i++) {
+            cloned.deepArray[i] = this.deepArray[i].clone();
+        }
         return cloned;
     }
 }
