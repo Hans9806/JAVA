@@ -35,19 +35,28 @@ import java.util.List;
 이름에 "김"이 포함된 사용자 수: 2*/
 public class Ex10 {
     public static void main(String[] args) {
+        // 사용자 정보 문자열
         String data = "김철수,30,kimcs@gmail.com;" +
                 "이영희,25,younghee@naver.com;" +
                 "박보검,22,bogum@daum.net;" +
                 "김민아,35,mina@gmail.com";
+
+        // 세미콜론(;) 으로 사용자 정보를 분리
         String[] users = data.split(";");
+
+        // 가장 나이가 많은 사용자의 나이와 이름을 저장할 변수
         int oldestAge = 0;
         String oldestUser = " ";
+
+        // 이름에 "김"이 포함된 사용자 수를 저장할 변수
         int kimCount = 0;
+        // "gmail.com" 도메인을 사용하는 사용자의 이름을 저장할 리스트
         List<String> gmailUsers = new ArrayList<>();
 
         System.out.println("전체 사용자 수: "+users.length);
         System.out.println("사용자 정보: ");
         for (String user : users) {
+            // 콤마(,)로 이름, 나이, 이메일을 분리
             String[] userInfo = user.split(",");
             String name = userInfo[0];
             int age = Integer.parseInt(userInfo[1]);
@@ -57,10 +66,13 @@ public class Ex10 {
             if (email.endsWith("@gmail.com")) {
                 gmailUsers.add(name);
             }
+            // 나이가 현재 가장 나이가 많은 사용자보다 많은 경우, 정보 업데이트
             if (age > oldestAge) {
                 oldestAge = age;
                 oldestUser = name;
             }
+
+            // 이름에 "김"이 포함된 경우, 카운트 증가
             if (name.contains("김")) {
                 kimCount++;
             }
