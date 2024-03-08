@@ -32,6 +32,8 @@ public class Ex3 {
         System.out.print("기간을 입력하세요: ");
         int termInYear = scanner.nextInt();
 
+
+
         BigDecimal base = annualInterestRate.add(BigDecimal.ONE);
         BigDecimal finalAmount = principal;
 
@@ -40,5 +42,12 @@ public class Ex3 {
         }
         System.out.printf("최종 금액: %.2f",finalAmount);
 
+        /*
+        최종 금액 = 원금 * (1 + 연이율)^기간
+        int i = principal * (1 + annualInterestRate) ^ year;
+        BigDecimal finalResult = principal
+                .multiply(BigDecimal.ONE
+                        .add(annualInterestRate)
+                        .pow(year));*/
     }
 }
