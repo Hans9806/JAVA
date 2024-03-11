@@ -71,6 +71,28 @@
      - 본문이 선언과 동시에 정의 -> 인터페이스 구현
      - 람다식으로 연결
     19. 예외처리
+     - Error, Exception
+     - checked 예외(compile), unchecked 예외(rentime)
+     - try-catch-finally
+     - throws 예외 떠넘기기, throw new 예외 발생시키기, 사용자 정의 예외
+    20. Object 클래스
+     - 모든 클래스의 조상
+     - toString, equals, hashCode, getClass
+    21. String 클래스
+     - 문자열 : immutable
+     - 문자열 메서드 : charAt, indexOf, length,
+     - replace, substring, trim, split, toLowerCase, toUpperCase
+     - stringBuilder, StringBuffer ( 변경 가능하게 문자열을 조작 mutable)
+    22. Class 클래스
+     - 클래스에 대한 메타 정보를 가져옴, 조작, 관리 => 리플렉션
+    23. MAth, Random 클래스
+    24. Wrapper 클래스
+     - 기본 타입을 객체로 포장하는 클래스
+    25. 날짜와 시간 관련 클래스
+     - Date, Calendar
+     - LocalDateTime, LocalDate, LocalTime
+     - Period, Duration, DateTimeFormatter
+    26. 제네릭
 
 ## 메서드 정의
     - 제어자(Modifier) : public, static
@@ -361,15 +383,22 @@
         - Server : 요청을 받는 쪽 (응답 : response)
         - Client : 요청을 하는 쪽 (요청 : request)
 ## 예외(Exception)
- - 프로그램 실행 중 발생할 수 있는 두 가지 문제
-   1. Error (에러 오류)
-      - 시스템 레벨에서 발생하는 심각한 문제
-      - 프로그램 외부에서 발생.
-      - 하드웨어 장애, 시스템 크래시. 자바가상머신 에러
-      - 소스 코드로는 복구가 불가능
-   2. Exception(예외)
-      - 프로그램 실행 중 발생할 수 있는 일반적인 문제
-      - 개발자가 코드를 통해 적절하기 처리하면 정상적인 실행을 할 수 있음
-        1. Checked Exception : 컴파일 시점에 체크되는 예외.
-        2. Unchecked Exception : 실행 시점(Runtime)에 발생하는 예외.
-           - 주로 RuntimeException 클래스에서 상속받음.
+    - 프로그램 실행 중 발생할 수 있는 두 가지 문제
+      1. Error (에러 오류)
+        - 시스템 레벨에서 발생하는 심각한 문제
+        - 프로그램 외부에서 발생.
+        - 하드웨어 장애, 시스템 크래시. 자바가상머신 에러
+        - 소스 코드로는 복구가 불가능
+      2. Exception(예외)
+        - 프로그램 실행 중 발생할 수 있는 일반적인 문제
+        - 개발자가 코드를 통해 적절하기 처리하면 정상적인 실행을 할 수 있음
+          1. Checked Exception : 컴파일 시점에 체크되는 예외.
+          2. Unchecked Exception : 실행 시점(Runtime)에 발생하는 예외.
+             - 주로 RuntimeException 클래스에서 상속받음.
+## Generic의 장점
+    1. 타입 안전성(Type Safely)를 가짐
+      - 컴파일 시점에 타입 체크를 수행할 수 있어. ClassCastException을 방지
+    2. 코드 재사용성의 향상
+      - 다양한 타입의 데이터에 대해 재사용 가능하여, 코드의 양을 줄인다.
+    3. 타입 캐스팅 감소
+      - 캐스팅 연산자를 사용하지 않아서 깔끔하고 가독성 향상
