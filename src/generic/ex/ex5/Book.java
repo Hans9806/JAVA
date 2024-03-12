@@ -1,8 +1,8 @@
 package generic.ex.ex5;
 
 public class Book implements Media {
-    private String title;
-    private String author;
+    String title;
+    String author;
 
     public Book(String title, String author) {
         this.title = title;

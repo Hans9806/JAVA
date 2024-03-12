@@ -1,9 +1,8 @@
 package generic.ex.ex5;
 
 public class Movie implements Media {
-    private String title;
-
-    private String director;
+    String title;
+    String director;
 
     public Movie(String title, String director) {
         this.title = title;
