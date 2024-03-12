@@ -16,7 +16,14 @@ public class VotingSystem {
     }
     public void startVoting() {
         Scanner scanner = new Scanner(System.in);
-        while (true) {System.out.println("투표하고 싶은 후보의 번호를 입력하세요 (종료하려면 0번을 입력) : ");
+        System.out.println("""
+                    1. 고길동
+                    2. 둘리
+                    3. 마이콜
+                    4. 희동이
+                    """);
+        while (true) {
+            System.out.println("투표하고 싶은 후보의 번호를 입력하세요 (종료하려면 0번을 입력) : ");
             int vote = scanner.nextInt();
             if (vote > 0 && vote <= candidataList.size()) {
                 candidataList.get(vote - 1).receiveVote();
