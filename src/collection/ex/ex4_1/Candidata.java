@@ -1,9 +1,13 @@
-package collection.ex.ex4;
+package collection.ex.ex4_1;
 
 public class Candidata {
     private String name;
     private int votes;
 
+    @Override
+    public String toString(){
+        return  this.name + ": " + this.votes;
+    }
     public Candidata(String name) {
         this.name = name;
         this.votes = 0;
@@ -16,9 +20,5 @@ public class Candidata {
     }
     public int getVotes() {
         return this.votes;
-    }
-    @Override
-    public String toString(){
-        return  this.name + ": " + this.votes;
     }
 }
