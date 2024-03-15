@@ -1,4 +1,4 @@
-package collection.ex.ex4_3;
+package collection.list.ex.ex4_3;
 
 public class Candidate {
 

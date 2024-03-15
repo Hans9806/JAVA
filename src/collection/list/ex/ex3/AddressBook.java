@@ -1,4 +1,4 @@
-package collection.ex.ex3;
+package collection.list.ex.ex3;
 
 import java.util.ArrayList;
 import java.util.Iterator;

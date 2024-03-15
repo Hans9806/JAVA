@@ -1,7 +1,6 @@
-package collection.ex.ex4_2;
+package collection.list.ex.ex4_2;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 

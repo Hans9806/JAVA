@@ -1,4 +1,4 @@
-package collection.ex.ex3;
+package collection.list.ex.ex3;
 
 public class Friends {
     private String name;

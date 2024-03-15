@@ -1,4 +1,4 @@
-package collection.ex.ex4_1;
+package collection.list.ex.ex4_1;
 
 public class Ex4 {
      /*
