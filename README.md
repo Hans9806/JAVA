@@ -97,6 +97,21 @@
      - 제네릭 클래스, 제네릭 메서드(리턴 타입 앞에 선언)
      - 제한된 타입 파라미터 <T extends 타입>
      - 와일드 카드 <? extends 타입> <? super 타입>
+    27. 컬렉션 프레임워크
+     - java.util 패키지 Collection -> List, Set
+     - List : 순서 있고(index), 중복 저장 가능
+     - Set : 순서 없고, 중복 없음
+     - Map : 키와 값으로 구성된 Entry, Key는 중복 안됨(Set)
+     - Iterator, Comparable, Cmparator
+     - Stack(LIFO), Queue(FIFO)
+     - collections, Arrays
+    28. 람다식
+     - 함수형 프로그래밍(Functionak Programming, FP)
+     - () -> {} : 매개변수 -> 본문
+     - 함수형 인터페이스 : SAM(단 하나의 추상 메서드를 가짐)
+     - 매개변수가 있는 람다식, 없는 람다식, 반환값이 있는 람다식, 없는 람다식
+     - 메서드 참조(Method Reference), 생성자 참조 (클래스이름::메서드이름) (클래스::new)
+    29. 스트림 API
 
 ## 메서드 정의
     - 제어자(Modifier) : public, static
@@ -461,3 +476,20 @@
         - 단일 추상 메서드 (Single Abstract Method) : SAM
         - 추상 메서드가 단 하나만 있는 인터페이스
      - 람다식과 1:1로 대응이 될 수 있게
+## 스트림 API
+     - Stream : 데이터의 흐름, 데이터의 물줄기
+     - 다양한 데이터 소스(컬렉션, 배열, I/O, 파일 리소드 등)에서 데이터를 추출하여 
+     연속적으로 처리 -> 함수형 스타일로 추상화, 간결화하게 표현 가능
+     - 2가지 유형의 연산이 존재
+        1. 중간 연산(Intermediate Opertation)
+            - 하나의 스트림에서 다른 스트림으로 데이터를 전달
+            - 입력값이 스트림, 연산 결과(리턴값)도 스트림
+            - 지연 평가(Lazy Evaluation) : 최종 연산이 될 때까지 실제 연산을 실행 
+             하지 않음
+                - 불필요한 계산을 최소화 (작업을 미룸)
+        2. 최종 연산(Terminal Opertation)
+            - 계산을 실행하고 결과를 반환
+            - 데이터의 흐름을 소비해서 실제 모든 연산을 실행함.
+            - 한 번 최종연산된 스트림은 더 이상 사용할 수 없다.
+    - 내부 반복(Iternal iteration) : 내부에서 요소들을 직접 처리하여 개발자가 반복물을
+    작성할 필요가 없이, 간결한 표현으로 데이터 처리를 도움
