@@ -103,5 +103,27 @@ public class Stream11 {
 
         System.out.println("over25students = " + over25students);
         System.out.println("under25students = " + under25students);
+
+        // summarizing : 숫자 요소에 대한 요약 통계 제공
+        // 반환값으로 SummaryStatistics 타입을 받아서
+        // 숫자에 관한 기본 통계들을 받을 수 있음.
+        // 기본타입
+        IntSummaryStatistics intSummaryStatistics = IntStream.rangeClosed(1, 100)
+                .summaryStatistics();
+
+        double average = intSummaryStatistics.getAverage();
+        int max = intSummaryStatistics.getMax();
+        int min = intSummaryStatistics.getMin();
+        long sum = intSummaryStatistics.getSum();
+        long count = intSummaryStatistics.getCount();
+
+        System.out.println("average = " + average);
+        System.out.println("max = " + max);
+        System.out.println("min = " + min);
+        System.out.println("sum = " + sum);
+        System.out.println("count = " + count);
+
+        IntSummaryStatistics collect = studentList.stream()
+                .collect(Collectors.summarizingInt(Student::age));
     }
 }
