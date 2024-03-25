@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread4 {
     // 스레드에 이름 주기

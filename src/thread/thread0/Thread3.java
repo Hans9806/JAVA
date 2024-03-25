@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread3 {
     // sleep 메서드 : 특정 시간 동안 스레드를 일시 정지

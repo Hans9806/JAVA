@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread11 {
     public static void main(String[] args) {

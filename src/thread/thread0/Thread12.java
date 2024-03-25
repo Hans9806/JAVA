@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread12 {
     // 종료 플래그 : 메인 스레드에서는 변경, 새 스레드에서는 참조

@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread6 {
     // 스레드의 우선순위

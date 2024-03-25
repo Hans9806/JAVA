@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 import java.util.Arrays;
 import java.util.List;

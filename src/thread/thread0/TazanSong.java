@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class TazanSong implements Runnable {
     int max;

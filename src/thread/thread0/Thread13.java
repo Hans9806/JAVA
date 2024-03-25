@@ -1,4 +1,4 @@
-package thread;
+package thread.thread0;
 
 public class Thread13 {
     // wait, notify : 스레드 간의 통신을 위해 사용되는 매커니즘 ㅜ
