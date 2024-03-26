@@ -5,26 +5,26 @@ import java.util.TreeSet;
 
 public class StudentMain {
     public static void main(String[] args) {
-        Student í™ê¸¸ë™ = new Student("í™ê¸¸ë™",30,170.0);
-        Student ì„êº½ì • = new Student("ì„êº½ì •",40,185.4);
-        Student ì „ìš°ì¹˜ = new Student("ì „ìš°ì¹˜",25,175.2);
-        Student í—ˆìƒ = new Student("í—ˆìƒ",45,163.6);
+        Student È«±æµ¿ = new Student("È«±æµ¿",30,170.0);
+        Student ÀÓ²©Á¤ = new Student("ÀÓ²©Á¤",40,185.4);
+        Student Àü¿ìÄ¡ = new Student("Àü¿ìÄ¡",25,175.2);
+        Student Çã»ı = new Student("Çã»ı",45,163.6);
 
         TreeSet<Student> studentTreeSet = new TreeSet<>();
 
-        studentTreeSet.addAll(Arrays.asList(í™ê¸¸ë™,ì„êº½ì •,ì „ìš°ì¹˜,í—ˆìƒ));
+        studentTreeSet.addAll(Arrays.asList(È«±æµ¿,ÀÓ²©Á¤,Àü¿ìÄ¡,Çã»ı));
 
         for (Student student : studentTreeSet) {
             System.out.println(student);
         }
-        System.out.println("====== ì´ë¦„ ìˆœ ì •ë ¬ ======");
-        // ì´ë¦„ ë¹„êµì ìƒì„±
+        System.out.println("====== ÀÌ¸§ ¼ø Á¤·Ä ======");
+        // ÀÌ¸§ ºñ±³ÀÚ »ı¼º
         StudentComparator nameStudentComparator = new StudentComparator(
                 StudentComparator.SortBy.NAME,StudentComparator.SortDirection.ASC);
-        // ì •ë ¬ ê¸°ì¤€ìœ¼ë¡œ ì´ë¦„ ë¹„êµì
+        // Á¤·Ä ±âÁØÀ¸·Î ÀÌ¸§ ºñ±³ÀÚ
         TreeSet<Student> nameSortSet = new TreeSet<>(nameStudentComparator);
-        // ì •ë ¬ ëŒ€ìƒ ì‚½ì…
-        nameSortSet.addAll(Arrays.asList(í™ê¸¸ë™,ì„êº½ì •,ì „ìš°ì¹˜,í—ˆìƒ));
+        // Á¤·Ä ´ë»ó »ğÀÔ
+        nameSortSet.addAll(Arrays.asList(È«±æµ¿,ÀÓ²©Á¤,Àü¿ìÄ¡,Çã»ı));
         for (Student student : nameSortSet) {
             System.out.println(student);
         }
@@ -44,7 +44,7 @@ public class StudentMain {
         };
         for (TreeSet<Student> treeSet : treeSets) {
             treeSet.addAll(
-                    Arrays.asList(í™ê¸¸ë™, ì„êº½ì •, ì „ìš°ì¹˜, í—ˆìƒ)
+                    Arrays.asList(È«±æµ¿, ÀÓ²©Á¤, Àü¿ìÄ¡, Çã»ı)
             );
             System.out.println("=================================");
             for (Student student : treeSet) {
