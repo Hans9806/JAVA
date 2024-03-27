@@ -72,7 +72,7 @@ public class Ex2 {
             String filePath = scanner.nextLine();
             filePaths.add(filePath);
         }
-        mergeFiles(filePaths, "merge.txt");
+        mergeFiles(filePaths, "src/io_stream/file/ex/merge.txt");
         System.out.println("파일 병합 완료. ");
 
     }
