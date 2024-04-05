@@ -20,7 +20,7 @@ import java.util.function.Consumer;
     cpp
     java
     swift
-    python
+    python   
 * */
 public class Ex1 {
     public static void main(String[] args) {
