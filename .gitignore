@@ -26,4 +26,4 @@ bin/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store!/lib/mysql-connector-j-8.0.33.jar
