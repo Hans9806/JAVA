@@ -24,7 +24,7 @@ ID: spring
 이 사용자를 정말 삭제하시겠습니까? (y/n): y
 사용자 ID spring의 정보가 성공적으로 삭제되었습니다.
 */
-public class Ex6 {
+public class Ex6_1 {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/jdbc";
         String user = "root";

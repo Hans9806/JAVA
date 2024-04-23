@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 - 비밀번호와 이메일주소는 기존값을 유지
 */
-public class Ex5 {
+public class Ex5_1 {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/jdbc";
         String user = "root";
