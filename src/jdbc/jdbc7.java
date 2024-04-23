@@ -22,11 +22,11 @@ public class jdbc7 {
 
             // ? 위치 = Index, 값은 타입에 맞게 지정
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1,"spring");
-            pstmt.setString(2,"봄봄");
+            pstmt.setString(1,"winter");
+            pstmt.setString(2,"겨울");
             pstmt.setString(3,"12345");
-            pstmt.setInt(4, 25);
-            pstmt.setString(5,"spring@abc.com");
+            pstmt.setInt(4, 30);
+            pstmt.setString(5,"winter@abc.com");
 
             // 쿼리 실행 + 실행되었을 때 행 수를 리턴
             // 정상적으로 실행될 경우 1을 리턴
